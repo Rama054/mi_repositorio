@@ -1,0 +1,37 @@
+h4{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Limelight', cursive;
+}
+
+.info_ubicacion{
+    display: inline-block;
+    position: relative;
+    bottom: 280px;
+}
+
+h5{
+    font-size: 20px;
+    font-family: 'Limelight', cursive;
+
+}
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    bottom:250px;
+}
+
+iframe{
+    margin: 20px;
+    display: inline-block;
+    width: 450px;
+    height: 300px;
+}
+
+article{
+    margin: 0px 70px;
+    background-color: rgba(255, 153, 0, 0.212);
+    margin-top: 10px;
+}

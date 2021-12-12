@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (min-width:320px){
+
+    #presentacion{
+        display: block;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        color:black;
+        text-align: center;
+    }
+
+    header{
+        background-color: aqua;
+        position: sticky;
+        top:0px;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width:1300px){
+    
+    #presentacion{
+        display: inline-block;
+        text-align: center;
+        /* height: 90px; */
+    }
+    
+    .menu {
+        display: inline;
+        position: absolute;
+        right: 0px;
+        top:25px;
+        color:black;
+    }
+    
+}
+.header__logo{
+    display: inline;
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+}
+
+#header__nombre{
+    display: inline;
+    position: relative;
+    bottom: 25px;
+    
+}
+
+
+
+.menu li{
+   display: inline-block;
+   font-size: 20px;
+   padding: 10px;   
+    
+}
+
+a{
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.menu ul{
+    position: absolute;
+    display: none;
+}
+
+a:hover{
+    border: 2px solid white;
+}
+
+.menu ul li{
+    display: block;
+}
+
+.menu li:hover ul{
+    display: block;
+    background-color: orange;
+}
+
+.sublist__element{
+    color: aliceblue;
+}
+
+#ubicacion a{
+    background-color: rgb(5, 211, 5);
+    border: 3px solid yellow
+}
+
+#ubicacion:hover a{
+    border: 5px solid yellow
+}
+
+footer{
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    border-top: 5px solid cyan;
+    margin-top: 30px;
+    padding: 10px;
+}

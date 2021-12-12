@@ -1,0 +1,158 @@
+
+/*TELEFONO*/
+@media screen and (min-width:320px){
+
+    #paralax__title{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 300%;
+        text-align: center;
+        background-color: rgba(255,255,255,0.5);
+        margin: 0px 50px;
+    }
+
+    #paralax{
+        background-image: url("../assets/img/agricultura-urbana.jpeg");
+        background-repeat:no-repeat;
+        background-size: cover;
+        height:350px;
+        background-attachment: fixed;
+        background-position: center;    
+        padding: 50px 0px;
+        margin-bottom:20px;
+    }
+
+    #paralax__text{
+        text-align: center;
+        font-size: 200%;
+        background-color: rgba(255,255,255,0.5);
+        margin: 0px 50px;
+    } 
+
+
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+        "video"
+        "info";
+        grid-gap: 5px;
+        grid-template-rows: 350px auto;
+        grid-template-columns: auto;
+        margin: 0px 20px;
+    }
+
+    #beneficios{
+        display: block;
+        text-align: center;
+        font-size: 300%;
+
+    }
+
+    #video{
+        grid-area: video;
+        text-align: center;
+        background-color: rgba(255,150,0,0.5);
+        padding: 15px;
+    }
+    
+    #info{
+        grid-area: info;
+        background-color: rgba(255,150,0,0.5);
+    }
+    
+    #pasosCompra{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    #pasosCompra article{
+        display: flex;
+        width: 300px;
+        flex-flow: column nowrap;
+        border: 2px solid black;
+        margin: 10px 0px;
+        padding: 10px;
+    }
+    
+    .article__img{
+        margin: 10px;
+    }
+
+    #mapa{
+        display: none;
+    }
+
+
+
+}
+
+/*COMPUTADORA*/
+@media screen and (min-width:1037px){
+    
+    #paralax__title{
+        font-size: 500%;
+    }
+
+    #paralax{
+        height:800px;
+    }
+
+    #grilla{
+        grid-template-areas: 
+        "video video video mapa"
+        "info info info mapa";
+        grid-template-columns: repeat(4,1fr);
+        justify-content: space-evenly;
+    }
+    section{
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+
+    #mapa{
+        border: 3px solid black;
+        display: inline;
+        grid-area: mapa;
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+
+    .info_ubicacion h5{
+        font-size: 20px;
+        font-family: 'Limelight', cursive;
+    
+    }
+    
+    .info_ubicacion p{
+        font-family: 'Roboto Mono', monospace;
+        bottom:250px;
+    }
+
+
+}
+
+
+
+.btn__info{
+    margin-top: 15px;
+    width: 50%;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    font-size: 120%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
