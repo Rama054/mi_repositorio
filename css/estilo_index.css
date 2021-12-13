@@ -12,6 +12,7 @@
 
     #paralax{
         background-image: url("../assets/img/agricultura-urbana.jpeg");
+        width: 100vp;
         background-repeat:no-repeat;
         background-size: cover;
         height:350px;
@@ -38,6 +39,8 @@
         grid-template-rows: 350px auto;
         grid-template-columns: auto;
         margin: 0px 20px;
+        animation-name: efecto;
+        animation-duration: 2s;
     }
 
     #beneficios{
@@ -52,6 +55,13 @@
         text-align: center;
         background-color: rgba(255,150,0,0.5);
         padding: 15px;
+        
+    }
+
+    #video iframe{
+        width: 90%;
+        animation-name: efecto-video;
+        animation-duration: 2s;
     }
     
     #info{
@@ -72,6 +82,8 @@
         border: 2px solid black;
         margin: 10px 0px;
         padding: 10px;
+        animation-name: efecto-beneficios;
+        animation-duration: 2s;
     }
     
     .article__img{
@@ -85,6 +97,7 @@
 
 
 }
+
 
 /*COMPUTADORA*/
 @media screen and (min-width:1037px){
@@ -104,6 +117,12 @@
         grid-template-columns: repeat(4,1fr);
         justify-content: space-evenly;
     }
+
+    #video iframe{
+        width: 550px;
+    }
+
+    
     section{
         flex-flow: row wrap;
         align-items: stretch;
@@ -134,10 +153,8 @@
 
 
 }
-
-
-
 .btn__info{
+    
     margin-top: 15px;
     width: 50%;
     padding: 7px;
@@ -149,6 +166,41 @@
     text-align: center;
 }
 
+
+@keyframes efecto{
+    0%{
+        opacity: 0;
+    }
+}
+
+@keyframes efecto-video{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    
+}
+
+@keyframes efecto-beneficios{
+    0%{
+        opacity: 0;
+        transform: translateX(-300px);
+          
+    }
+    40%{
+        transform: rotate(0deg);
+    }
+    60%{
+        transform: rotate(5deg);  
+    }
+    80%{
+        transform: rotate(-5deg);   
+    }
+    100%{
+         transform: rotate(0deg); 
+    }
+    
+}
 
 
 
