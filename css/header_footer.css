@@ -1,4 +1,4 @@
-*{
+/**{
     padding: 0px;
     margin: 0px;
 }
@@ -29,7 +29,7 @@
     #presentacion{
         display: inline-block;
         text-align: center;
-        /* height: 90px; */
+        /* height: 90px; *//*
     }
     
     .menu {
@@ -120,4 +120,38 @@ footer{
 footer *{
     position: relative;
     top:100px;
+}*/
+
+
+/* @media screen and (min-width:320px){
+    #header__nombre{
+        display: none;    
+    }
+    
+}
+
+@media screen and (min-width:600px){
+    #header__nombre{
+        display: inline;    
+    }
+    
+} */
+
+.header__logo{
+    display: inline;
+    margin: 0px 5px;
+    width: 75px;
+    height: 75px;
+}
+
+
+header{
+    background-color: aqua;
+    position: sticky;
+    top:0px;
+    z-index: 10;
+}
+
+button{
+    top:25px;
 }

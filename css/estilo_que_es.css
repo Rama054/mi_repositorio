@@ -1,5 +1,5 @@
 
-
+/* 
 .paralax{
     background-image: url("../assets/img/muestra_raices.jpg");
     background-repeat:no-repeat;
@@ -40,7 +40,7 @@
 article:nth-child(2){
     background-image: url("../assets/img/tomates-hidroponicos.jpg");
     text-align: right;
-}
+} */
 
 #video{
     background-color: #e7cc53d8;
@@ -58,4 +58,23 @@ article:nth-child(2){
 }
 
 
+#carrusel{
+    width: 900px;
+    margin: 0px auto;
+}
 
+.img-carrusel{
+    width: 900px;
+    height: 500px;
+}
+
+.titulo{
+    color:black;
+    font-size: 50px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.texto{
+    color:black;
+    background-color: rgba(255,255,255,0.5);
+}
