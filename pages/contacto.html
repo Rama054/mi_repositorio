@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap" rel="stylesheet">
 
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -50,48 +53,55 @@
         </div>
     </header>
 
-        <div id = "grilla">
-            <form action = "" method = "get" id = "formulario">
-                <h5 id="tittle_contact"> Contactanos</h5>
-                <!-- <legend>Formulario de contacto</legend> -->
+    <div class="conteiner-fluid" id="grilla">
+        
+        <div id = "formulario">
+            
+            <form class="p-3">
+                <h3 class="titulo mb-5">Contactenos</h3>
+                <div class="row mb-3">
+                    <div class="col form-floating">
+                        <input type="text" class="form-control" id = "floatingInputGrid" placeholder=" " aria-label="First name">
+                        <label for="floatingInputGrid">Nombre </label>
+                      </div>
+                    <div class="col form-floating">
+                      <input type="text" class="form-control" id = "floatingInputGrid" placeholder=" " aria-label="First name">
+                      <label for="floatingInputGrid">Apellido </label>
+                    </div>
+                  </div>
     
-                <div id = "nombrea">
-                    <div class = "nombre_f">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id = "nombre"  name = "nombre" required>
-                    </div>
-                    
-                    <div class = "nombre_f">
-                        <label  for="apellido">Apellido: </label>
-                        <input  type="text" id = "apellido"  name = "apellido" required>
-                    </div>
-                </div>
-                
-                
-                <div class="email_f">
-                    <label  for="email">Email:</label>
-                    <input  type="email" id = "email" name = "email" placeholder="nombre@hotmil.com" required>
-                </div>
-                
-                <div class="mensaje_f">
-                    <label for="mensaje"> Mensaje a enviar:</label>
-                    <textarea  name="mensaje" id="mensaje" cols="48" rows="5" placeholder="Ingrese su mensaje" required></textarea>
-                </div>
-        
-                <div class="check_f">
-                    <input type="checkbox" id = "acepta" >
-                    <label for="acepta">Recibir newsleters</label>
-                </div>
-                
-                <input id = "send_btn" type="submit" value="Enviar formulario">
-                <input id = "clear_btn" type="reset" value="Borrar formulario">
-                
-        
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder=" ">
+                    <label for="floatingInput">Email</label>
+                  </div>
+    
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder=" " id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Mensaje</label>
+                  </div>
+                  
+                  <div class="form-check mb-3" id="check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Recibir newsleters
+                    </label>
+                  </div>
+    
+                  <div class = "d-inline">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </div>
+                  <div class = "d-inline">
+                    <button type="reset" class="btn btn-danger">Eliminar contenido</button>
+                  </div>
             </form>
-        
-    
-        <img id = "imagen" src="../assets/img/cultivos-form.jpg" alt="granja hidroponica">
+            
+        </div>
+
+        <div id = "imagen">
+           <!--  <img src="../assets/img/cultivos-form.jpg" alt="agriculura"> -->
+        </div>
     </div>
+    
     
     
     
