@@ -1,0 +1,79 @@
+@import 'variables';
+
+
+@media screen and (min-width:320px){
+    
+    #formulario{
+        justify-content: center;
+        background-image: url("../assets/img/cultivos-form.jpg");
+        display: flex;
+        align-items: center;
+        height: 700px;
+        
+    }
+    .titulo{
+        background-color: $blanco-claro-on;
+        text-align: center;
+        font-family: 'Vesper Libre', serif;
+        font-size: 3.5rem;
+    }
+
+    #check{
+        background-color: $blanco-claro-on;
+    }
+
+    #imagen{
+        display: none;
+    }
+    
+    #grilla{
+        animation-name: efecto;
+        animation-duration: 1s;
+    }
+
+}
+
+@media screen and (min-width:992px){ /*992px porque es cuando aparece el menu de hamburguesa*/
+    
+    #grilla{
+        display: grid;
+        grid-template-areas: 
+            "contacto imagen";
+        grid-template-columns: 50% 50%;
+        justify-content: space-evenly;
+        background-color: $color-fondo;
+        margin: 20px 0px;        
+        height: 700px;
+    }
+    
+    #imagen{
+        display: block;
+        grid-area: imagen;
+        background: {
+            image: url(../assets/img/cultivos-form.jpg);
+            size: contain;
+            repeat:no-repeat;
+        }
+    }
+    
+    #formulario{
+        background-image: none;
+        grid-area: contacto;
+    }
+    .titulo{
+        background-color: $blanco-claro-off;
+    }
+    #check{
+        background-color: $blanco-claro-off;
+    }
+
+    
+}
+
+
+@keyframes efecto{
+    0%{
+        opacity: 0;
+    }
+    
+}

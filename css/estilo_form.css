@@ -1,74 +1,84 @@
-
-
-@media screen and (min-width:320px){
-    
-    #formulario{
-        justify-content: center;
-        background-image: url("../assets/img/cultivos-form.jpg");
-        display: flex;
-        align-items: center;
-        height: 700px;
-        
-    }
-    .titulo{
-        background-color: rgba(255,255,255,0.5);
-        text-align: center;
-        font-family: 'Vesper Libre', serif;
-        font-size: 3.5rem;
-    }
-
-    #check{
-        background-color: rgba(255,255,255,0.5);
-    }
-
-    #imagen{
-        display: none;
-    }
-    
-    #grilla{
-        animation-name: efecto;
-        animation-duration: 1s;
-    }
-
+@media screen and (min-width: 320px) {
+  #formulario {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("../assets/img/cultivos-form.jpg");
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+  }
+  .titulo {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: 'Vesper Libre', serif;
+    font-size: 3.5rem;
+  }
+  #check {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  #imagen {
+    display: none;
+  }
+  #grilla {
+    -webkit-animation-name: efecto;
+            animation-name: efecto;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+  }
 }
 
-@media screen and (min-width:992px){ /*992px porque es cuando aparece el menu de hamburguesa*/
-    
-    #grilla{
-        display: grid;
-        grid-template-areas: 
-            "contacto imagen";
+@media screen and (min-width: 992px) {
+  /*992px porque es cuando aparece el menu de hamburguesa*/
+  #grilla {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "contacto imagen";
+    -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-        justify-content: space-evenly;
-        background-color: rgba(255, 153, 0, 0.212);
-        margin: 20px 0px;        
-        height: 700px;
-    }
-    
-    #imagen{
-        display: block;
-        grid-area: imagen;
-        background-image: url(../assets/img/cultivos-form.jpg);
-        background-size: contain;
-        background-repeat:no-repeat;
-    }
-    
-    #formulario{
-        background-image: none;
-        grid-area: contacto;
-    }
-    .titulo{
-        background-color: rgba(255,255,255,0);
-    }
-    #check{
-        background-color: rgba(255,255,255,0);
-    }
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: rgba(255, 153, 0, 0.212);
+    margin: 20px 0px;
+    height: 700px;
+  }
+  #imagen {
+    display: block;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: imagen;
+    background-image: url(../assets/img/cultivos-form.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #formulario {
+    background-image: none;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: contacto;
+  }
+  .titulo {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  #check {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
 
-    
+@-webkit-keyframes efecto {
+  0% {
+    opacity: 0;
+  }
 }
-@keyframes efecto{
-    0%{
-        opacity: 0;
-    }
-    
+
+@keyframes efecto {
+  0% {
+    opacity: 0;
+  }
 }
+/*# sourceMappingURL=estilo_form.css.map */

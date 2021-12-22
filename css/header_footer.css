@@ -11,6 +11,20 @@ header{
     z-index: 10;
 }
 
+button{
+    top:25px;
+}
+
+footer{
+    text-align: center;
+    height: 100px;
+}
+
+.botonNav{
+    color:white;
+}
+
+
 /*
 header div nav{
     background-color: aqua;
@@ -32,16 +46,3 @@ header div nav{
     color:black;
     transform: scale(2);
 }  */
-
-button{
-    top:25px;
-}
-
-footer{
-    text-align: center;
-    height: 100px;
-}
-
-.botonNav{
-    color:white;
-}
