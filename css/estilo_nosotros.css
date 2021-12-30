@@ -16,7 +16,6 @@
     font-size: 50px; 
     font-family: 'Limelight', cursive;
     text-align: center;
-    margin: 0px 500px;
 }
 
 .paralax p{
@@ -45,8 +44,6 @@
 .information h3{
     position: relative;
     display: inline;
-    bottom: 250px;
-    left: 180px;
     font-size: 50px; 
     font-family: 'Limelight', cursive;
 }

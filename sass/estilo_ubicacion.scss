@@ -40,6 +40,6 @@ iframe{
 
 article{
     margin: 0px 70px;
-    background-color: rgba(255, 153, 0, 0.212);
+    background-color: map-get($colores,color-fondo);
     margin-top: 10px;
 }

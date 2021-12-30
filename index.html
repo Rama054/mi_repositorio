@@ -7,7 +7,6 @@
     <link rel="shortcut icon" href="./assets/img/Hidroponia-ico2.png">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/estilo_index.css">
-    
 
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -18,32 +17,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap" rel="stylesheet">
     
-    <title>Hidroponia</title>
+    <!--SEO-->
+    <meta name="descripcion" content="FutureFarms | Tienda de productos hidroponicos sustentables y libre de pesticidas en argentina">
+    <meta name="keywords" content="FutureFarms, Hidroponia, Aereoponea, Cultivos, Verticales, Hortalizas, Locales">
+    
+    <title>FutureFarms | Inicio</title>
 </head>
 <body>
 <!-- INICIO DEL HEADER + BARRA DE NAVEGACION-->
     <header>
         <div class="conteiner-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light border-3 border-bottom border-light">
-                <div class="navegacion conteiner-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light border-3 border-bottom border-light">
+                <div class="conteiner-fluid">
                     <img class = "header__logo" src="./assets/img/Hidroponia-ico2.png" alt="Logo">
-                    <a href="./index.html" id="header__nombre"class="navbar-brand">Nombre de la marca</a>
+                    <a href="../index.html" id="header__nombre"class="navbar-brand">FutureFarms</a>
                     <button type="button" class="navbar-toggler position-absolute end-0" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                         <span class = "navbar-toggler-icon"></span>
                     </button>
                 </div>
-                <div id="navegacion" class="collapse navbar-collapse">
+                <div id="menuNavegacion" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-3">
                         <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/que_es.html">Que es Hidroponia?</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./pages/productos.html">Categoria1</a></li>
-                              <li><a class="dropdown-item" href="./pages/productos.html">Categoria2</a></li>
-                              <li><a class="dropdown-item" href="./pages/productos.html">Categoria3</a></li>
+                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria1</a></li>
+                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria2</a></li>
+                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria3</a></li>
                             </ul>
-                          </li>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="./pages/sobre_nosotros.html">Sobre Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
                     </ul> 
@@ -68,37 +71,35 @@
             </div>
 
             <div id = "info">
-                <span id = "beneficios">BENEFICIOS</span>
+                <span id = "beneficios--tittle">BENEFICIOS</span>
                 <section id = "pasosCompra">
-                     <article>
+                     <article class ="beneficios">
                          <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>TITULO1</h3>
+                             <h3>Reducciones de emisiones de CO2</h3>
                              <p>Lorem ipsum dolor sit 
                              </p>
                              <a href="#" class ="btn__info">Mas informacion</a> 
                          
                      </article>
      
-                     <article>
+                     <article class ="beneficios--usuario">
                          <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>TITULO1</h3>
+                             <h3>Barato</h3>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro aliquid labore fugit cumque, an
                              </p>
-                             
-                         
                      </article>
      
-                     <article>
+                     <article class ="beneficios--usuario">
                          <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga">
-                             <h3>TITULO2</h3>
+                             <h3>Productos sin pesticidas</h3>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro aliquid labore fugit cumque, animi ipsa omnis voluptatem, minima in exercitationem cum vero eum harum odio libero illo
                              </p>
                               
                      </article>
      
-                     <article>
+                     <article class = "beneficios">
                          <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>TITULO3</h3>
+                             <h3>Cultivados en la ciudad</h3>
                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro 
                              </p>
                              <a href="#" class = "btn__info">Mas informacion</a> 

@@ -20,21 +20,11 @@ footer{
     height: 100px;
 }
 
-.botonNav{
-    color:white;
-}
-
-
-/*
-header div nav{
+.navbar{
     background-color: aqua;
 }
  
- .navegacion ul li a{
-    color:black
-}
-
-.navegacion ul li{
+.nav-item{
     background-color: white;
     border-radius: 50px;
     padding: 0 5px;
@@ -42,7 +32,28 @@ header div nav{
     color:black
 }
 
-.navegacion ul li a:hover{
+.nav-item a:hover{
     color:black;
-    transform: scale(2);
-}  */
+    transform: scale(1.1);
+}  
+
+.navbar-nav{
+    position: absolute;
+    right: 0px;
+}
+
+@media screen and (max-width:992px){
+    .nav-item{
+        background-color: transparent;
+        padding: 0 5px;
+        margin-right: 15px;
+        color:black
+    }
+    .navbar-nav{
+        position: relative;
+    }
+
+    .nav-item a:hover{
+        transform: scale(1);
+    }  
+} 

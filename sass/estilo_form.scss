@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 @media screen and (min-width:320px){
     
     #formulario{
@@ -12,14 +11,14 @@
         
     }
     .titulo{
-        background-color: $blanco-claro-on;
+        background-color: map-get($colores, blanco-claro-on);
         text-align: center;
         font-family: 'Vesper Libre', serif;
         font-size: 3.5rem;
     }
 
     #check{
-        background-color: $blanco-claro-on;
+        background-color: map-get($colores, blanco-claro-on);
     }
 
     #imagen{
@@ -41,8 +40,8 @@
             "contacto imagen";
         grid-template-columns: 50% 50%;
         justify-content: space-evenly;
-        background-color: $color-fondo;
-        margin: 20px 0px;        
+        background-color:  map-get($colores, color-fondo);
+        @include margenes(20px,0px);       
         height: 700px;
     }
     
@@ -61,10 +60,10 @@
         grid-area: contacto;
     }
     .titulo{
-        background-color: $blanco-claro-off;
+        background-color: map-get($colores, blanco-claro-off);
     }
     #check{
-        background-color: $blanco-claro-off;
+        background-color: map-get($colores, blanco-claro-off);
     }
 
     
