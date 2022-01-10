@@ -20,6 +20,12 @@ body {
     -ms-grid-column: 1;
     grid-area: productos;
   }
+  .producto {
+    width: 80%;
+  }
+  .Img__product {
+    width: 90%;
+  }
   #menu {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -69,8 +75,16 @@ body {
   }
 }
 
+@media screen and (min-width: 400px) {
+  .producto {
+    max-width: 550px;
+  }
+  .Img__product {
+    max-width: 550px;
+  }
+}
+
 .Img__product {
-  font-family: "Vesper Libre", serif;
   border: 5px solid black;
   margin: 10px;
 }
@@ -113,7 +127,11 @@ body {
 .producto {
   margin: 7px;
   padding: 15px;
-  height: 450px;
   background-color: rgba(255, 153, 0, 0.212);
+}
+
+.menuProducts li a {
+  color: black;
+  text-decoration: none;
 }
 /*# sourceMappingURL=estilo_productos.css.map */

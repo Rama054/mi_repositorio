@@ -1,46 +1,74 @@
 
-/* 
-.paralax{
-    background-image: url("../assets/img/muestra_raices.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    height:800px;
-    background-attachment: fixed;
-    background-position:center;    
-    padding: 50px 0px;
-    margin:20px 0px;
+/*TELEFONO*/
+@media screen and (min-width: 320px){
+     .fondo_imagen{
+        border-bottom: solid 5px white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        background-size: cover;
+        background-position: top;
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+     .contenido{
+        max-width: 300px;
+        color:white;
+        text-align: center;
+        font-size: 1.2rem;
+    } 
+
 }
 
-.paralax h4{
-    background-color: rgba(255,255,255,0.5);
-    position: relative;
-    padding: 10px;
-    font-size: 100px;
-    font-family: 'Limelight', cursive;
-    margin: 0px 700px 0px 150px;
+/*TABLETA*/
+@media screen and (min-width: 750px){
+    .contenido{
+        max-width: 600px;
+        font-size: 1.5rem;
+    }
 }
 
-.paralax p{
-    background-color: rgba(255,255,255,0.5);
-    position: relative;
-    padding: 20px;
-    font-size: 25px;
-    text-align: left;
-    margin: 0px 700px 0px 150px;
-    font-family: 'Roboto Mono', monospace;
+/*COMPUTADORA*/
+@media screen and (min-width: 992px){
+    .contenido{
+        max-width: 900px;
+        text-align: left;
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+
+    .fondo_imagen{
+        justify-content: center;
+        align-items: start;
+    }
+
+    iframe{
+        width: 550px;
+    }
 }
 
-.paralax:nth-child(2) p{
-    left:500px;
-}
-.paralax:nth-child(2) h4{
-    left:500px;
+.agua{
+    background-image: url(../assets/img/Agua-1.jpg);
+    animation-name: translacionIzquierda;
+    animation-duration: 2s;
 }
 
-article:nth-child(2){
-    background-image: url("../assets/img/tomates-hidroponicos.jpg");
-    text-align: right;
-} */
+.ciudad{
+    background-image: url(../assets/img/pexels-photo-2347297.jpeg);
+    animation-name: translacionDerecha;
+    animation-duration: 3s;
+} 
+
+.campo{
+    background-image: url(../assets/img/cosechadora.jpg);
+    animation-name: translacionIzquierda;
+    animation-duration: 4s;
+} 
 
 #video{
     background-color: #e7cc53d8;
@@ -48,33 +76,22 @@ article:nth-child(2){
     text-align: center;
 }
 
-
 #video h4{
     font-family: 'Limelight', cursive;
-    position: relative;
-    right: 165px;
     font-size: 20px;
     padding: 10px 0px;
 }
 
+ @keyframes translacionIzquierda {
+     0%{
+         opacity: 0.5;
+         transform: translateX(-500px);
+     }
+ }
 
-#carrusel{
-    width: 50%;
-    margin: 0px auto;
-}
-
-.img-carrusel{
-    width: 900px;
-    height: 500px;
-}
-
-.titulo{
-    color:black;
-    font-size: 50px;
-    background-color: rgba(255,255,255,0.5);
-}
-
-.texto{
-    color:black;
-    background-color: rgba(255,255,255,0.5);
+ @keyframes translacionDerecha {
+    0%{
+        opacity: 0.5;
+        transform: translateX(500px);
+    }
 }

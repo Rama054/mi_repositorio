@@ -1,3 +1,20 @@
+
+@media screen and (min-width:360px) {
+    .image img{
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:920px) {
+    .image img{
+        width: 520px;
+        height: 400px;
+    }
+}
+
+
+
 h4{
     font-size: 100px;
     font-family: 'Limelight', cursive;
@@ -6,11 +23,13 @@ h4{
 
 .image{
     margin: 20px;
-    display: inline-block;
     border: 5px dashed orange;
 }
 
-.image img{
-    width: 400px;
-    height: 400px;
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }

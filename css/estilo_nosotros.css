@@ -1,77 +1,190 @@
-.paralax{
-    background-image: url("../assets/img/agricultura-urbana.jpeg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position-y: bottom;
-    height:600px;
-    background-attachment: fixed;  
-    padding: 50px 0px;
-    margin:20px 0px;
+
+
+@media screen and (min-width:320px){
+    .img-carrusel{
+        height: 300px;
+    }
+    .paralax{
+        background-image: url("../assets/img/agricultura-urbana.jpeg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position-y: bottom;
+        height:600px;
+        background-attachment: fixed;  
+        padding: 50px 0px;
+        margin:20px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenido{
+        width: 80%;
+    }
+
+    .paralax h2{
+        position: relative;
+        background-color: rgba(255,255,255,0.5);
+        padding: 5px;
+        font-size: 25px; 
+        font-family: 'Limelight', cursive;
+        text-align: center;
+    }
+
+    .paralax p{
+        position: relative;
+        background-color: rgba(255,255,255,0.5);
+        font-size: 15px; 
+        font-family: 'Roboto Mono', monospace;
+        text-align: center;
+    }
+
+    #video iframe{
+        width: 100%;
+    }
+
+    .informacion{
+        background-color: rgba(255, 153, 0, 0.212);
+        padding: 20px;
+        margin: 20px 0px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion__contenido{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informacion__contenido h3{
+        font-size: 50px; 
+        font-family: 'Limelight', cursive;
+    }
+
+    .informacion__contenido p{
+        font-size: 15px; 
+        font-family: 'Roboto Mono', monospace;
+    }
+
+    .informacion__img{
+        width: 80%;
+        max-width: 400px;
+        margin: 0px auto;
+    }
+
+
+    #enlaces{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img{
+        text-align: center;
+        height: 300px;
+        margin: 7px;
+        background-size: cover;
+    }
+    .img a{
+        position: relative;
+        top:50%;
+    }
+
+
+
+
 }
 
-.paralax h2{
-    position: relative;
+@media screen and (min-width:600px){
+    .img-carrusel{
+        height: 450px;
+    }
+    #carrusel{
+        min-width: 550px;
+        max-width: 1000px;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .paralax h2{
+        font-size: 50px; 
+    }
+
+    .paralax p{
+        font-size: 25px; 
+    }
+
+    #video iframe{
+        width: 550px;
+        text-align: center;
+    }
+
+    .informacion{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .informacion__contenido{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 15px;
+    }
+
+    .informacion__contenido h3{
+        font-size: 50px; 
+    }
+
+    .informacion__contenido p{
+        font-size: 15px; 
+    }
+
+    .informacion__img{
+        max-width: 60%;
+    }
+
+
+}
+
+@media screen and (min-width:992px){
+    #enlaces{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img{
+        width: 50%;
+        height: 500px;
+    }
+}
+
+
+
+
+.titulo{
+    color:black;
+    font-size: 50px;
     background-color: rgba(255,255,255,0.5);
-    padding: 5px;
-    font-size: 50px; 
-    font-family: 'Limelight', cursive;
-    text-align: center;
 }
 
-.paralax p{
-    position: relative;
+.texto{
+    color:black;
     background-color: rgba(255,255,255,0.5);
-    font-size: 25px; 
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-    margin: 0px 500px;
-
 }
+
 
 #video{
-    text-align: center;
-}
-
-
-.information{
     background-color: rgba(255, 153, 0, 0.212);
-    padding: 20px;
-    margin: 20px 0px;
-    text-align: center;
-    
-}
-
-.information h3{
-    position: relative;
-    display: inline;
-    font-size: 50px; 
-    font-family: 'Limelight', cursive;
-}
-
-.information p{
-    position: relative;
-    display: inline-block;
-    font-size: 25px; 
-    font-family: 'Roboto Mono', monospace;
-    width: 500px;
-    text-align: left;
-}
-
-.information img{
-    position: relative;
-    left: 50px;
-    width: 500px;
-}
-
-.img{
-    display: inline-block;
-    position: relative;
-    width: 49%;
-    height: 500px;
-    margin: 7px;
-    background-size: cover;
+    padding: 15px;
+    margin: 15px;
     text-align: center;
 }
+
+
+
 
 .img:nth-child(1){
     background-image: url(../assets/img/granjas.jpg);
@@ -82,13 +195,12 @@
 }
 
 .img a{
-    display: inline-block;
-    position: relative;
+    text-decoration: none;
+    color:black;
     background-color: rgba(0, 241, 0,0.5);
     border: 5px solid yellow;
     border-radius: 30px;
     padding: 10px;
-    top: 235px;
     font-size: 25px; 
     font-family: 'Roboto Mono', monospace;
 }

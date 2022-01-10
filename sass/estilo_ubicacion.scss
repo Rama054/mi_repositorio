@@ -1,22 +1,58 @@
 @import 'variables';
 
-h4{
-    display: inline-block;
-    margin: {
-        left: 50px;
-        top: 20px;
+@media screen and (min-width:360px) {
+
+    article{
+        display: flex;
+        flex-direction: column;
+        
     }
+
+    .info_ubicacion{
+        margin: 20px;
+    }
+
+    iframe{
+        margin: 0px auto;
+        height: 250px;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-width:720px) {
+
+    iframe{
+        margin: 0px auto;
+        width: 80%;
+        height: 300px;
+
+    }
+}
+
+@media screen and (min-width:920px) {
+
+    article{
+        flex-direction: row;
+        
+    }
+
+    iframe{
+        margin: 20px;
+        max-width: 600px;
+    }
+
+    
+}
+
+
+h4{
     font: {
         size: 50px;
         family: 'Limelight', cursive;
     }
 }
 
-.info_ubicacion{
-    display: inline-block;
-    position: relative;
-    bottom: 280px;
-}
 
 h5{
     font: {
@@ -28,18 +64,11 @@ h5{
 
 p{
     font-family: 'Roboto Mono', monospace;
-    bottom:250px;
 }
 
-iframe{
-    margin: 20px;
-    display: inline-block;
-    width: 450px;
-    height: 300px;
-}
 
 article{
-    margin: 0px 70px;
+    margin: 0px 20px;
     background-color: map-get($colores,color-fondo);
     margin-top: 10px;
 }
