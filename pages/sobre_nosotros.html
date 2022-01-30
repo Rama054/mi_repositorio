@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/estilo_nosotros.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,9 +49,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./productos.html">Categoria1</a></li>
-                              <li><a class="dropdown-item" href="./productos.html">Categoria2</a></li>
-                              <li><a class="dropdown-item" href="./productos.html">Categoria3</a></li>
+                              <li><a class="dropdown-item" href="../pages/productos/verduras.html">Verduras</a></li>
+                              <li><a class="dropdown-item" href="../pages/productos/productos.html">Hidroponia en tu casa</a></li>
                             </ul>
                           </li>
                         <li class="nav-item"><a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
@@ -55,7 +61,7 @@
         </div>
     </header>
 
-    <section >
+   <!--  <section >
         <article class = "paralax">
             <div class="contenido">
                 <h2>TITULO PRESENTACION</h2>
@@ -63,9 +69,9 @@
             </div>
            
         </article>    
-    </section>
+    </section> -->
 
-    <div id = "carrusel">
+    <!-- <div id = "carrusel">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -104,53 +110,66 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-    </div>
+    </div> -->
 
-    <section id = "video">
+    <!-- <section id = "video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ME_rprRlmMM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section> 
+    </section>  -->
 
 
-    <section> 
-        <article class = "informacion">
-            <div class="informacion__contenido">
-                <h3>Titulo2</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur reprehenderit obcaecati corrupti at odio animi quis consequuntur libero quos, molestias nulla facilis accusamus eum dicta veritatis fugiat nihil voluptatem!</p>
-            </div>
-            <img class="informacion__img" src="../assets/img/personaEnHuerto.jpg"alt="agricultura vertical">
-        
-        </article>
+  <section> 
+      <article class = "informacion">
+          <div class="informacion__contenido">
+              <h3>Titulo2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur reprehenderit obcaecati corrupti at odio animi quis consequuntur libero quos, molestias nulla facilis accusamus eum dicta veritatis fugiat nihil voluptatem!</p>
+          </div>
+          <img class="informacion__img" src="../assets/img/personaEnHuerto.jpg"alt="agricultura vertical">
+      
+      </article>
 
-        <article class = "informacion">
-            <div class="informacion__contenido">
-                <h3>Titulo2</h3>
-                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur reprehenderit obcaecati corrupti at odio animi quis consequuntur libero quos, molestias nulla facilis accusamus eum dicta veritatis fugiat nihil voluptatem!</p>
-            </div>
-            
-            <img class="informacion__img" src="../assets/img/personaEnHuerto.jpg"alt="agricultura vertical">
-        </article>
-    </section>
-
-
-    <section id="enlaces">
-        <div class = "img">
-            <a href="./ubicacion.html">Nuestras granjas</a>
-        </div>
-        <div class = "img">
-            <a href="./galeria.html">Galeria</a>
-        </div>
-        
-    </section>
+      <article class = "informacion">
+          <div class="informacion__contenido">
+              <h3>Titulo2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequatur reprehenderit obcaecati corrupti at odio animi quis consequuntur libero quos, molestias nulla facilis accusamus eum dicta veritatis fugiat nihil voluptatem!</p>
+          </div>
+          
+          <img class="informacion__img" src="../assets/img/personaEnHuerto.jpg"alt="agricultura vertical">
+      </article>
+  </section>
 
 
-
+  <div id="mas_info" class="row w-100">
+      <div id="puntos_compra"class="col-md-4 bg-danger">
+          <a href="#">Locales Adheridos</a>
+      </div>
+      <div id="nuestras_granjas"class="col-md-4 bg-primary">
+          <a href="./ubicacion.html">Nuestras Granjas</a>
+      </div>
+      <div id="nosotros" class="col-md-4 bg-success">
+          <a href="./sobre_nosotros.html">Sobre nosotros</a>
+      </div>
+  </div>
 
     <footer>
-        <p>Informacion Contacto. Telefono, direccion, horarios, mail...</p>
-        <img src="../assets/img/insta ico.png" alt="instagram" width="50">
-        <img src="../assets/img/wpp ico.png" alt="whatsapp" width="50">
-        <img src="../assets/img/face ico.png" alt="facebook" width="50">
-    </footer>
+      <div id="contacto">
+          <span class="footer__titulo">CONTACTO</span>
+          <p>¡Dejanos tus datos en el formulario!</p>
+          <p>¡Te responderemos a la brevedad!</p>
+          <a id="btn_formulario" href="./pages/contacto.html">FORMULARIO</a>
+      </div>
+      <div id="email">
+          <span class="footer__titulo">E-MAL DE CONTACTO</span>
+          <p>CONSULTAS@FUTUREFARMS.COM.AR</p>
+      </div>
+      <div id="redes">
+          <span class="footer__titulo">Nuestras Redes</span>
+          <div id="iconos">
+              <a target="_blank" href="https://instagram.com"><img src="../assets/img/insta ico.png" alt="instagram" width="50"></a>
+              <a target="_blank" href="https://whatsapp.com"><img src="../assets/img/wpp ico.png" alt="whatsapp" width="50"></a>
+              <a target="_blank" href="https://facebook.com"><img src="../assets/img/face ico.png" alt="facebook" width="50"></a>
+          </div>
+      </div>
+  </footer> 
 
 
 </body>

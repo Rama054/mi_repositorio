@@ -17,6 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap" rel="stylesheet">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
     <!--SEO-->
     <meta name="descripcion" content="FutureFarms | Tienda de productos hidroponicos sustentables y libre de pesticidas en argentina">
     <meta name="keywords" content="FutureFarms, Hidroponia, Aereoponea, Cultivos, Verticales, Hortalizas, Locales">
@@ -42,9 +53,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria1</a></li>
-                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria2</a></li>
-                            <li><a class="dropdown-item" href="./pages/productos.html">Categoria3</a></li>
+                            <li><a class="dropdown-item" href="./pages/productos/verduras.html">Verduras</a></li>
+                            <li><a class="dropdown-item" href="./pages/productos/productos.html">Hidroponia en tu casa</a></li>
                             </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./pages/sobre_nosotros.html">Sobre Nosotros</a></li>
@@ -55,101 +65,99 @@
         </div>
     </header>
 
-        <section id = "paralax">
-            <article>
-                 <div>
-                     <h2 id = paralax__title>TITULO Agricultura urbana</h2>
-                     <p id = paralax__text>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                 </div>
-                 
+    <section id = "paralax">
+        <article>
+            <div id="paralax__texto">
+                <h2 id = paralax__title>FUTURE FARMS</h2>
+                <p id = paralax__parrafo>El futuro de la agricultura</p>
+            </div>
+        </article>
+    </section>
+
+    <div id="contenedor__beneficios">
+        <h3 id="titulo__beneficios">Beneficos de la Hidroponia</h3>
+        <div id="beneficios">
+            <article class="beneficio">
+                <img class = "article__img" src="./assets/img/CO2.png" alt="Reduccion de CO2"> 
+                <div>
+                    <h3>Reduccion de emisiones de CO2</h3>
+                    <p>Al cultivarse en origen, reducen la huella de carbono.</p>
+                </div>
             </article>
-        </section>
-     
-         <div id = "grilla">
-            <div id = "video">
-             <iframe height = "315"src="https://www.youtube.com/embed/Qq4lhRuqNcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div id = "info">
-                <span id = "beneficios--tittle">BENEFICIOS</span>
-                <section id = "pasosCompra">
-                     <article class ="beneficios">
-                         <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>Reducciones de emisiones de CO2</h3>
-                             <p>Lorem ipsum dolor sit 
-                             </p>
-                             <a href="#" class ="btn__info">Mas informacion</a> 
-                         
-                     </article>
-     
-                     <article class ="beneficios--usuario">
-                         <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>Barato</h3>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro aliquid labore fugit cumque, an
-                             </p>
-                     </article>
-     
-                     <article class ="beneficios--usuario">
-                         <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga">
-                             <h3>Productos sin pesticidas</h3>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro aliquid labore fugit cumque, animi ipsa omnis voluptatem, minima in exercitationem cum vero eum harum odio libero illo
-                             </p>
-                              
-                     </article>
-     
-                     <article class = "beneficios">
-                         <img class = "article__img" src="./assets/img/lechuga en mano.jpg" alt="lechuga"> 
-                             <h3>Cultivados en la ciudad</h3>
-                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facere itaque porro 
-                             </p>
-                             <a href="#" class = "btn__info">Mas informacion</a> 
-                         
-                     </article>
-                 </section> 
-            </div>
-
-            <div id = "mapa">
-             <article>
-                 <div class = "info_ubicacion">
-                     <h5>Gran Buenos Aires</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime!</p>
+            <article class="beneficio">
+                <img class = "article__img" src="./assets/img/barato.png" alt="Economico"> 
+                <div>
+                    <h3>Economico</h3>
+                    <p>Al ser producido en medio de las ciudades, los costos de transporte son casi nulos, teniendo precios totalmente bajos.</p>
                 </div>
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.6911982007392!2d-58.412800570768155!3d-34.63538369533654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb060e35ff51%3A0x9a388e0259a99917!2sVirrey%20Liniers%202114!5e0!3m2!1ses-419!2sar!4v1636609031367!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                             
-             </article>
-             <article>
-                 <div class = "info_ubicacion">
-                     <h5>Gran Buenos Aires</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime!</p>
+            </article>
+            <article class="beneficio">
+                <img class = "article__img" src="./assets/img/pesticida.png" alt="Pesticidas"> 
+                <div>
+                    <h3>Productos sin pesticidas</h3>
+                    <p>Los alimentos cultivados hidroponicamente son completamente organicos al crecer en un ambiente controlado libre de plagas.</p>
                 </div>
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.5626667208894!2d-58.38250078422661!3d-34.69098556962903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcccd0d86f49ad%3A0x111951794962ee14!2sRep%C3%BAblica%20del%20L%C3%ADbano%20410%2C%20B1824LAT%20Gerli%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1637742490527!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                 
-              </article>
-              <article>
-                 <div class = "info_ubicacion">
-                     <h5>La Plata</h5>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, maxime!</p>
-                 </div>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.059112722402!2d-57.92268753543912!3d-34.93005440627343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e8ae06f7c889%3A0xed81ea5a6ab8b6df!2sC.%204%202068%2C%20B1914%20Villa%20Elvira%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1637742573305!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  
-                  
-             </article>
-     
-     
-     
-            </div>
-        </div> 
-     
-        <footer>
-            <p>Informacion Contacto. Telefono, direccion, horarios, mail...</p>
-            <div id="redes">
-                <img src="./assets/img/insta ico.png" alt="instagram" width="50">
-                <img src="./assets/img/wpp ico.png" alt="whatsapp" width="50">
-                <img src="./assets/img/face ico.png" alt="facebook" width="50">
-            </div>
-        </footer> 
-     
+            </article>
+            <article class="beneficio">
+                <img class = "article__img" src="./assets/img/agua.png" alt="Agua"> 
+                <div>
+                    <h3>Reduccion del agua</h3>
+                    <p>La hidroponia reduce significativamente el uso del agua, debido a que raices de las plantas estan expuestas y el riego es directo.</p>
+                </div>
+            </article>
+        </div>
+        <a class="btn__info"href="./pages/que_es.html">Que es la hidroponia?</a>
     </div>
+
+    <div id="video_presentacion">
+        <video src="./assets/img/verticalFarms.mp4" autoplay muted loop></video>
+        <div id="video__texto">
+            <h4 id="video_texto_titulo">La inovacion de la agricultura moderna</h4>
+            <p id="video_texto_parrafo">Junto a la tecnologia, </p>
+        </div>
+    </div>
+
+    <div id="video">
+        <div id="video__texto">
+            <h4 id="video_texto_titulo">La inovacion de la agricultura moderna</h4>
+            <p id="video_texto_parrafo">Junto a la tecnologia, </p>
+        </div>
+        <iframe src="https://www.youtube.com/embed/Qq4lhRuqNcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+
+    <div id="mas_info" class="row w-100">
+        <div id="puntos_compra"class="col-md-4 bg-danger">
+            <a href="#">Locales Adheridos</a>
+        </div>
+        <div id="nuestras_granjas"class="col-md-4 bg-primary">
+            <a href="./pages/ubicacion.html">Nuestras Granjas</a>
+        </div>
+        <div id="nosotros" class="col-md-4 bg-success">
+            <a href="./pages/sobre_nosotros.html">Sobre nosotros</a>
+        </div>
+    </div>
+    
+    <footer>
+        <div id="contacto">
+            <span class="footer__titulo">CONTACTO</span>
+            <p>¡Dejanos tus datos en el formulario!</p>
+            <p>¡Te responderemos a la brevedad!</p>
+            <a id="btn_formulario" href="./pages/contacto.html">FORMULARIO</a>
+        </div>
+        <div id="email">
+            <span class="footer__titulo">E-MAL DE CONTACTO</span>
+            <p>CONSULTAS@FUTUREFARMS.COM.AR</p>
+        </div>
+        <div id="redes">
+            <span class="footer__titulo">Nuestras Redes</span>
+            <div id="iconos">
+                <a target="_blank" href="https://instagram.com"><img src="./assets/img/insta ico.png" alt="instagram" width="60"></a>
+                <a target="_blank" href="https://whatsapp.com"><img src="./assets/img/wpp ico.png" alt="whatsapp" width="60"></a>
+                <a target="_blank" href="https://facebook.com"><img src="./assets/img/face ico.png" alt="facebook" width="60"></a>
+            </div>
+        </div>
+    </footer> 
 
 
 

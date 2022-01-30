@@ -1,0 +1,181 @@
+/*TELEFONO*/
+@media screen and (min-width: 320px){
+    #paralax_que_es{
+        background: {
+            image: url("../assets/img/que_es.jpg");
+            repeat:no-repeat;
+            size: cover;
+            attachment: fixed;
+            position: center;   
+        }
+        border-bottom: 5px solid black;
+        height:650px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #paralax_texto{
+            animation-name: translacionDesdeArriba;
+            animation-duration: 2s;
+            text-align: center;
+            width: 88%;
+            max-width: 1200px;
+            color:black;
+            background-color: #dec27ccc;
+            font-family: 'Vollkorn', serif;
+            h2{
+                font-style: italic;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    #texto_que_es{
+        width: 80%;
+        margin: 20px auto;
+        font-family: 'Vollkorn', serif;
+        font-size: 1.1rem;
+        .texto_titulo{
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+
+    #problemas_titulo{
+        background-color: cyan;
+        display: block;
+        text-align: center;
+        font-family: 'Vollkorn', serif;
+        font-size: 2rem;
+    }
+    .slide{
+        height: 600px;
+    }
+    .texto{
+        font-family: 'Vollkorn', serif;
+        font-size: 2rem;
+    }
+    p{
+        font-family: 'Vollkorn', serif;
+        font-size: 1.1rem;
+    }
+
+    #contenedor__beneficios{
+        background-color: #DEC27C;
+    }
+    #beneficios{
+        width: 80%;
+        margin: 0px auto 100px auto;
+        display: flex;
+        flex-direction: column;
+        /* div:hover{
+            transform: scale(1.1);
+        } */
+        div{
+            animation-name: translacionCostados;
+            animation-duration: 2s;
+            font-family: 'Vollkorn', serif;
+            padding: 20px;
+            p{
+                span{
+                    font-weight: bold;
+                }
+            }
+            h6{
+                padding: 10px;
+                text-align: center;
+                font-size: 1.1rem;  
+            }
+        }
+        div:last-child{
+            width: 100%;
+        }
+        
+    }
+
+
+
+}
+
+/*COMPUTADORA*/
+@media screen and (min-width: 992px){
+    #paralax_que_es{
+        #paralax_texto{
+            h2{
+                font-size: 3rem;
+            }
+            p{
+                font-size: 1.5rem ;
+            }
+        }
+    }
+    
+    .slide{
+        height: 700px;
+    }
+
+    #beneficios{
+        flex-direction: row;
+        flex-wrap: wrap;
+        div{
+            width: 50%;
+            h6{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+
+}
+@media screen and (min-width:1400px) {
+    
+    #texto_que_es{
+        font-size: 1.2rem;
+        .texto_titulo{
+            font-size: 2rem;
+        }
+    }    
+}
+
+
+
+@keyframes translacionDesdeArriba {
+     0%{
+         opacity: 0.7;
+         transform: translateY(-200px);
+     }
+}
+@keyframes translacionCostados {
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
+
+
+
+.deforestacion{
+    background-image: url("../assets/img/deforestacion.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.riego{
+    background-image: url("../assets/img/riego.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.ruta{
+    background-image: url("../assets/img/ruta.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.poblacion{
+    background-image: url("../assets/img/poblacion.jpg");
+    background-position: center;
+    background-size: cover;
+   
+}
+    

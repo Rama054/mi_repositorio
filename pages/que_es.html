@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="stylesheet" href="../css/estilo_que_es.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+
 
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -42,9 +50,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="./productos.html">Categoria1</a></li>
-                              <li><a class="dropdown-item" href="./productos.html">Categoria2</a></li>
-                              <li><a class="dropdown-item" href="./productos.html">Categoria3</a></li>
+                              <li><a class="dropdown-item" href="../pages/productos/verduras.html">Verduras</a></li>
+                              <li><a class="dropdown-item" href="../pages/productos/productos.html">Hidroponia en tu casa</a></li>
                             </ul>
                           </li>
                         <li class="nav-item"><a class="nav-link" href="./sobre_nosotros.html">Sobre Nosotros</a></li>
@@ -55,43 +62,123 @@
         </div>
     </header>
 
-    <section>
+    <div id="paralax_que_es">
+      <div id="paralax_texto">
+        <h2>¿Que es la hidroponia?</h2>
+        <p>Es la técnica de cultivo en la que la tierra se sustituye por una solucion acuoasa a base de agua y nutrientes.</p>
+      </div>
+    </div>
 
-          <article class="fondo_imagen agua">
-            <div class="contenido">
-              <h2>TITULO</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestias ea temporibus modi. Porro aspernatur suscipit a quis architecto odio dolorum similique facilis expedita! Nisi quis mollitia suscipit quibusdam accusamus!</p>
-            </div> 
-          </article>
+    <div id="texto_que_es">
+      <h5 class="texto_titulo">Una solucion del presente para un problema del futuro</h5>
+      <p>Los años han pasado y nuestra tierra ya no es la misma, a lo largo de los años ha ido cambiando la pureza de nuestros suelos, y la tradicional práctica de siembra ha llegado a un punto crítico, en el que cada vez es menos rentable para los productores.</p>
 
-          <article class="fondo_imagen ciudad">
-            <div class="contenido">
-              <h2>TITULO</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestias ea temporibus modi. Porro aspernatur suscipit a quis architecto odio dolorum similique facilis expedita! Nisi quis mollitia suscipit quibusdam accusamus!</p>
-            </div> 
-          </article>
+      <p>La tierra, después de ser cultivada debe dejarse descansar para que se regenere adecuadamente, este tiempo representa pérdidas para los agricultores, por esto, cada vez es más común que los productores migren al cultivo en contenedores con sustrato, ya que, además de generar mejores resultados, evita que los cultivos sean expuestos a agentes externos, como patógenos, bacterias y animales y el mal clima.</p>
 
-          <article class="fondo_imagen campo">
-            <div class="contenido">
-              <h2>TITULO</h2>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam molestias ea temporibus modi. Porro aspernatur suscipit a quis architecto odio dolorum similique facilis expedita! Nisi quis mollitia suscipit quibusdam accusamus!</p>
-            </div> 
-          </article>
+      <p>El cultivo en contenedores, además de evitar la exposición a dichos agentes, ayuda a desarrollar el máximo potencial y evitar pérdidas ocasionadas por enfermedades o plagas, permitiendo un mejor control individual por planta y evitando propagaciones que pongan en riesgo el cultivo.</p>
 
-        <article id = "video">
-            <h4>TITULO PARA EL VIDEO</h4>
-            <iframe width = "560" height = "315"src="https://www.youtube.com/embed/Qq4lhRuqNcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </article>
+      <p>Es por esto que la tendencia actual del mercado es migrar el cultivo tradicional a la agricultura sin suelo.</p>
 
-        
-    </section>
+    </div>
 
+    <span id="problemas_titulo">Problemas actuales</span>
+    
+    <div id="demo" class="carousel" data-bs-ride="carousel">
+
+      <!-- indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      </div>
+      
+      <!-- carrusel -->
+      <div class="carousel-inner mb-5">
+        <div class="carousel-item active">
+          <div class="deforestacion slide"></div>
+          <div class="carousel-caption texto">
+            <p>-En la actualidad, cerca del 40% de la superficie libre de hielos del planeta está bajo agricultura, en tierras antes cubiertas por bosque-</p>
+            <p>-Los sectores agricultura, ganadería y otros usos de la tierra representan el 37% de las emisiones de Gases de Efecto Invernadero (GEI) del país-</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="riego slide"></div>
+          <div class="carousel-caption texto">
+            <p>-La agricultura se ocupa el 70% del agua dulce que se extrae en el mundo-</p>
+          </div> 
+        </div>
+        <div class="carousel-item">
+          <div class="ruta slide"></div>
+          <div class="carousel-caption texto">
+            <p>-Los alimentos de normal recorren miles de kilometros antes de llegar a nuestras mesas, lo que supone una parte importante de las emisiones de gases de efecto invernadero a la atmosfera-</p>
+          </div>  
+        </div>
+        <div class="carousel-item">
+          <div class="poblacion slide"></div>
+          <div class="carousel-caption texto">
+            <p>-Actualmente la poblacion mundial 7.9 billones de personas y se proyecta 10 billones para 2056-</p>
+          </div>  
+        </div>
+      </div>
+      
+      <!-- controles derecha/izquierda -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    
+    <span id="problemas_titulo">Beneficios</span>
+    <div id="contenedor__beneficios">
+      <div id="beneficios">
+        <div>
+          <h6>Aumenta tus cultivos por m²</h6>
+          <p>Aunque puede parecer más pequeño que una operación al aire libre promedio, un sistema vertical puede equivaler a 4-6 veces más superficie de crecimiento que un invernadero estándar. <span>Una hectárea de agricultura vertical en promedio produce 4-6 hectáreas dependiendo de la densidad del cultivo y la duración del ciclo.</span> </p>
+        </div>
+        <div>
+          <h6>Protección contra los elementos</h6>
+          <p>La agricultura vertical se cultiva en un clima totalmente controlado, a salvo de los elementos naturales como el viento, la lluvia y las heladas. Además, el entorno seguro da como resultado <span>cero plagas y bacterias invasoras</span> , proporcionando asi productos orgánicos <span>libres de pesticidas</span>.</p>
+        </div>
+        <div>
+          <h6>Reduce el consumo de agua</h6>
+          <p>Los sistemas de cultivo vertical permiten que los productos crezcan con un 70-95% menos de agua requerida. Todo gracias a un ambiente controlado y al recirculamiento y filtrado del agua en el sistema.</p>
+        </div>
+        <div>
+          <h6>Crecimiento y rendimiento estandarizado de los cultivos</h6>
+          <p>Con la tecnología de cultivo vertical, como el uso de espectros LED a medida, riego automatizado y control climático permite una operación estandarizar en cada ciclo de crecimiento, produciendo la misma cantidad, calidad y tamaño del cultivo.</p>
+        </div>
+        <div>
+          <h6>Producción local</h6>
+          <p>Al ser un ambiente controlado, las operaciones verticales pueden establecerse donde quieran, con climas y patrones climáticos que se vuelven obsoletos. La producción local significa un impacto positivo en las comunidades locales, lo que resulta en una afluencia de empleos y contribución a economías más pequeñas. Su producción local y la cosecha de cultivos reducen la cantidad de kilómetros de transporte, lo que significa una disminución en la huella de carbono global. Las operaciones verticales reducen las emisiones generales de CO² en un 67-92% en comparación con otros sistemas de producción.</p>
+        </div>
+      </div>
+  
+    </div>
+    
     <footer>
-        <p>Informacion Contacto. Telefono, direccion, horarios, mail...</p>
-        <img src="../assets/img/insta ico.png" alt="instagram" width="50">
-        <img src="../assets/img/wpp ico.png" alt="whatsapp" width="50">
-        <img src="../assets/img/face ico.png" alt="facebook" width="50">
-    </footer>
+      <div id="contacto">
+          <span class="footer__titulo">CONTACTO</span>
+          <p>¡Dejanos tus datos en el formulario!</p>
+          <p>¡Te responderemos a la brevedad!</p>
+          <a id="btn_formulario" href="../pages/contacto.html">FORMULARIO</a>
+      </div>
+      <div id="email">
+          <span class="footer__titulo">E-MAL DE CONTACTO</span>
+          <p>CONSULTAS@FUTUREFARMS.COM.AR</p>
+      </div>
+      <div id="redes">
+          <span class="footer__titulo">Nuestras Redes</span>
+          <div id="iconos">
+              <a target="_blank" href="https://instagram.com"><img src="../assets/img/insta ico.png" alt="instagram" width="50"></a>
+              <a target="_blank" href="https://whatsapp.com"><img src="../assets/img/wpp ico.png" alt="whatsapp" width="50"></a>
+              <a target="_blank" href="https://facebook.com"><img src="../assets/img/face ico.png" alt="facebook" width="50"></a>
+          </div>
+      </div>
+  </footer> 
 
 
 </body>

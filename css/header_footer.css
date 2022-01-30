@@ -1,15 +1,23 @@
-.header__logo{
-    display: inline;
-    margin: 0px 5px;
-    width: 75px;
-    height: 75px;
-}
-
 header{
     position: sticky;
     top:0px;
     z-index: 10;
 }
+
+.header__logo{
+    display: inline;
+    margin: 10px;
+    width: 95px;
+    height: 95px;
+}
+
+#header__nombre{
+    position: relative;
+    top:15px;
+    font-size: 3rem;
+    font-family: 'Vollkorn', serif;
+}
+
 
 button{
     top:25px;
@@ -57,3 +65,51 @@ footer{
         transform: scale(1);
     }  
 } 
+
+@media screen and (min-width:320px) {
+    footer{
+        margin-top: 20px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color:white;
+        background-color: #39472D;
+
+    }
+
+    #btn_formulario{
+        position: relative;
+        top:10px;
+        text-decoration: none;
+        padding: 7px;
+        color: white;
+        background-color: yellowgreen;
+        border-radius: 15px;
+        font-size: 1.1em;
+        margin: 10px;
+    }
+
+    footer p{
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+
+    .footer__titulo{
+        font-family: 'Teko', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    footer{
+        height: 170px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .footer__titulo{
+        font-family: 'Teko', sans-serif;
+        font-size: 2rem;
+    }
+}

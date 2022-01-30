@@ -1,20 +1,9 @@
 @import 'variables';
 
-
-
-
 /*TELEFONO*/
 @media screen and (min-width:320px){
 
-    #paralax__title{
-        font: {
-            family:'Roboto Mono', monospace;
-            size: 300%;
-        }
-        text-align: center;
-        background-color: map-get($colores, blanco-claro-on);
-        margin: 0px 50px;
-    }
+    
 
     #paralax{
         background: {
@@ -24,193 +13,254 @@
             attachment: fixed;
             position: center;   
         }
-                
-        margin-bottom:20px;
-    }
+        border-bottom: 5px solid black;
+        height:650px;
 
-    #paralax__text{
-        text-align: center;
-        font-size: 200%;
-        background-color: map-get($colores, blanco-claro-on);
-        margin: 0px 50px;
-    } 
+        #paralax__texto{
+            background-color: map-get($colores, blanco-claro-on);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px auto;
+            #paralax__title{
+                font: {
+                    family: 'Vollkorn', serif;
+                    size: 2.5rem;
+                }
+            }
 
-
-    #grilla{
-        display: grid;
-        grid-template-areas: 
-                "video"
-                "info";
-        grid-gap: 5px;
-        grid-template-rows: 350px auto;
-        grid-template-columns: auto;
-        margin: 0px 20px;
-        animation-name: efecto;
-        animation-duration: 2s;
-    }
-
-    #beneficios--tittle{
-        display: block;
-        text-align: center;
-        font-size: 300%;
-    }
-
-    #video{
-        grid-area: video;
-        text-align: center;
-        background-color: map-get($colores, color-fondo);
-        padding: 15px;
-        
-    }
-
-    #video iframe{
-        width: 90%;
-        animation-name: efecto-video;
-        animation-duration: 2s;
+            #paralax__parrafo{
+                text-align: center;
+                font-size: 2rem;
+                width: 250px;
+            } 
+        }
     }
     
-    #info{
-        grid-area: info;
-        background-color: map-get($colores, color-fondo);
-    }
-    
-    #pasosCompra{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-
-    .beneficios{
-        display: flex;
-        width: 300px;
-        flex-flow: column nowrap;
-        border: 2px solid black;
-        @include margenes(10px,0px);
-        padding: 10px;
-        animation-name: efecto-beneficios;
-        animation-duration: 2s;
-    }
-
-    .beneficios--usuario{
-        @extend .beneficios;
-        background-color: rgb(18, 194, 179);
-    }
-    
-    .article__img{
-        margin: 10px;
-    }
-
-    #mapa{
+    #video_presentacion{
         display: none;
     }
 
+    #video{
+        iframe{
+            width: 320px;
+            height: 315px;
+        }
+        text-align: center;
+        background-color: black;
+        #video__texto{
+            margin: 0px auto;
+            width: 320px;
+            font-family: 'Vollkorn', serif;;
+            #video_texto_titulo{
+                font: {
+                    style: italic;
+                    size: 1.2rem;
+                }
+            }
+            #video_texto_parrafo{
+                font-size: 1rem;
+            }
+            animation-name: efecto;
+            animation-duration: 2s;
+            color: white;
+        }
+    }
 
+    #contenedor__beneficios{
+        background-color: #DADD21;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        #titulo__beneficios{
+            margin: 10px;
+            font-family: 'Vollkorn', serif;
+            font-size: 1.5rem;
+            color:black;
+        }
+        #beneficios{
+            .beneficio:hover{
+                transform: scale(1.1);
+            }
+            .beneficio{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 320px;
+                margin-bottom: 10px;
+                .article__img{
+                    margin-right: 5px;
+                    height: 70px;
+                }
+            }
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        a{
+            width: 40%;
+            padding: 7px;
+            text-decoration: none;
+            color: white;
+            background-color: #6c9747;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
 
+    .col-md-4{
+        height: 200px;
+    }
 }
 
 
+@media screen and (min-width:768px){
+    #video{
+        iframe{
+            width: 500px;
+            height: 315px;
+        }
+        #video__texto{
+            width: 768px;
+            #video_texto_titulo{
+                font-size: 2rem;
+            }
+            #video_texto_parrafo{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #contenedor__beneficios{
+        #titulo__beneficios{
+            font-size: 2.5rem;
+        }
+        #beneficios{
+            .beneficio{
+                width: 350px;
+                margin-bottom: 10px;
+                .article__img{
+                    margin-right: 15px;
+                    height: 70px;
+                }
+            }
+            width: 820px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .col-md-4{
+        height: 400px;
+    }
+}
+
+
+
 /*COMPUTADORA*/
-@media screen and (min-width:1037px){
+@media screen and (min-width:1300px){
+    #video{
+        display: none;
+    }
+    #video_presentacion{
+        display:block;
+    }
+    #contenedor__beneficios{
+        #titulo__beneficios{
+            font-size: 3rem;
+        }
+        #beneficios{
+            .beneficio{
+                width: 500px;
+                .article__img{
+                    height: 100px;
+                }
+            }
+            width: 1200px;
+        }
+    }
     
-    #paralax__title{
-        font-size: 500%;
+    #video_presentacion{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0px;
+        background-color: black;
+        #video__texto{
+            #video_texto_titulo{
+                width: 400px;
+                font-family: 'Vollkorn', serif;
+                font-style: italic;
+                font-size: 3rem;
+            }
+            #video_texto_parrafo{
+                font-size: 1.5rem;
+                font-family: 'Vollkorn', serif;
+            }
+            animation-name: efecto;
+            animation-duration: 2s;
+            color: white;
+        }
     }
 
     #paralax{
         height:800px;
     }
+}
 
-    #grilla{
-        grid-template-areas: 
-        "video video video mapa"
-        "info info info mapa";
-        grid-template-columns: repeat(4,1fr);
-        justify-content: space-evenly;
+@media screen and (min-width:1700px) {
+    #video_presentacion{        
+        flex-direction: row;
     }
+}
 
-    #video iframe{
-        width: 550px;
+
+
+
+@keyframes efecto {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
     }
+}
 
-    
-    section{
-        flex-flow: row wrap;
-        align-items: stretch;
-    }
 
-    #mapa{
-        border: 3px solid black;
-        display: inline;
-        grid-area: mapa;
-        background-color: green;
+#puntos_compra{
+    background-image: url(../assets/img/ciudad_calles.jpg);
+    background-position: center;
+}
+#nuestras_granjas{
+    background-image: url(../assets/img/granjas.jpg);
+    background-position: center;
+}
+#nosotros{
+    background-image: url(../assets/img/pared_verde.jpg);
+    background-position: center;
+}
+
+#mas_info{
+    .col-md-4{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding: 10px;
-    }
-
-
-    .info_ubicacion h5{
-        font-size: 20px;
-        font-family: 'Limelight', cursive;
-    
-    }
-    
-    .info_ubicacion p{
-        font-family: 'Roboto Mono', monospace;
-        bottom:250px;
-    }
-
-
-}
-
-.btn__info{
-    
-    margin-top: 15px;
-    width: 60%;
-    padding: 7px;
-    text-decoration: none;
-    color: white;
-    background-color: yellowgreen;
-    border-radius: 15px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-
-@keyframes efecto{
-    0%{
-        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        a:hover{
+            transform: scale(1.1);
+        }
+        a{
+            width: 40%;
+            padding: 7px;
+            text-decoration: none;
+            color: white;
+            background-color: #6c9747;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            text-align: center;
+        }
     }
 }
-
-@keyframes efecto-video{
-    0%{
-        opacity: 0;
-        transform: translateX(200px);
-    }
-    
-}
-
-@keyframes efecto-beneficios{
-    0%{
-        opacity: 0;
-        transform: translateX(-300px);
-          
-    }
-    40%{
-        transform: rotate(0deg);
-    }
-    60%{
-        transform: rotate(2deg);  
-    }
-    80%{
-        transform: rotate(-2deg);   
-    }
-    100%{
-         transform: rotate(0deg); 
-    }
-    
-}
-
 

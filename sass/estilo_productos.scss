@@ -1,144 +1,108 @@
 @import 'variables';
 
-body{
-    background-color: map-get($colores, gris-clarito)
-}
-
 @media screen and (min-width:320px){
+    
     #mainTittle{
         margin: 20px;
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
     }
-    
-    #grillaProductos{
-        display: grid;
-        grid-template-areas: 
-            "menu"
-            "productos";
-        grid-gap: 5px;
-        margin: 0px 10px;
-    }
 
-    #productos{
-        grid-area: productos;
-    }
-
-    .producto{
-        width: 80%;
-    }
-
-    .Img__product{
-        width: 90%;
-    }
-
-    #menu{
-        grid-area: menu;
-        justify-self: center;
-    }
-
-    #menu{
-        p{
-            font-size: 150%;
-            text-align: center;
+    .menuDesplegable{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .botonDesplegable{
+            width: 340px;
         }
     }
 
-    .menuProducts{
+    #productos{
         display: flex;
         flex-flow: row wrap;
-        
-    }
-
-
-
-
-}
-
-@media screen and (min-width:1400px){
-    #grillaProductos{
-        grid-template-areas: 
-            "menu productos";
-        grid-template-columns: 300px auto;
-    }
-
-    #menu{
-        grid-area: menu;
-        p{
-            text-align: left;
+        margin: 20px auto;
+        justify-content: center;
+        width: 90%;
+        .producto{
+            border-radius: 10px;
+            border: solid rgba(192, 192, 192, 0.363) 1px;
+            margin: 20px;
+            padding: 15px;
+            //background-color: map-get($colores,color-fondo);
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            .Img__product{
+                align-self: center;
+                height: 190px;
+                margin: 10px;
+            }
+            .tittle__product{
+                height: 100px;
+                border-top: solid rgba(192, 192, 192, 0.363) 2px;
+                font-size: 30px;
+            }
+            .description{
+                height: 50px;
+            }
+            .price{
+                font-size: 30px
+            }
+            .buyBnt{
+                width: 50%;
+                text-align: center;
+                align-self: center;
+                background-color: greenyellow;
+                border-radius: 10px;
+                font-size: 20px;
+                bottom: 200px;
+                padding: 5px;
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 
-    #productos{
-        grid-area: productos;
-    }
-
-    .menuProducts{
-        flex-flow: column nowrap;
-    }
-
+    
 }
 
 @media screen and (min-width:400px){
     .producto{
-        max-width: 550px;
-    }
-
-    .Img__product{
-        max-width: 550px;
+        max-width: 400px;
     }
 }
 
-.Img__product{
-    border: 5px solid black;
-    margin: 10px;
-}
-
-.tittle__product{
-    font-size: 30px;
-}
-
-.price{
-    font-size: 30px
-}
-
-.buyBnt{
-    background-color: greenyellow;
-    border-radius: 10px;
-    font-size: 20px;
-    bottom: 200px;
-} 
-
-.menuProducts{
-    li{
-        text-align: center;
-        margin: 7px 10px;
-        font-size: 30px;
-        list-style:none;
-    }
-}
-
-
-#productos{
-    grid-area: productos;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.producto{
-    margin: 7px;
-    padding: 15px;
-    background-color: map-get($colores,color-fondo);
-}
-
-.menuProducts{
-    li{
-        a{
-            color: black;
-            text-decoration: none;
+//es cuando cambia el menu de navegacion
+@media screen and (min-width:992px) {
+    #productos{
+        .producto{
+            .Img__product{
+                height: 290px;
+           }
         }
     }
+}
+
+@media screen and (min-width:1000px){
+    .menuDesplegable{
+        flex-direction: row;
+        justify-content: space-around;
+        .botonDesplegable{
+            width: 400px;
+        }
+    }    
+}
+
+
+@media screen and (min-width:1420px){
+    .menuDesplegable{
+        justify-content: start;
+        margin-left: 50px;
+    }
+}
+
+body{
+    background-color: map-get($colores, gris-clarito)
 }
 
 
