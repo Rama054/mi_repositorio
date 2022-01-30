@@ -4,19 +4,7 @@ header{
     z-index: 10;
 }
 
-.header__logo{
-    display: inline;
-    margin: 10px;
-    width: 95px;
-    height: 95px;
-}
 
-#header__nombre{
-    position: relative;
-    top:15px;
-    font-size: 3rem;
-    font-family: 'Vollkorn', serif;
-}
 
 
 button{
@@ -67,6 +55,20 @@ footer{
 } 
 
 @media screen and (min-width:320px) {
+    .header__logo{
+        display: inline;
+        margin: 10px;
+        width: 75px;
+        height: 75px;
+    }
+    
+    #header__nombre{
+        position: relative;
+        top:15px;
+        font-size: 2rem;
+        font-family: 'Vollkorn', serif;
+    }
+
     footer{
         margin-top: 20px;
         height: 320px;
@@ -102,6 +104,7 @@ footer{
 }
 
 @media screen and (min-width:768px){
+    
     footer{
         height: 170px;
         flex-direction: row;
@@ -112,4 +115,16 @@ footer{
         font-family: 'Teko', sans-serif;
         font-size: 2rem;
     }
+}
+
+@media screen and (min-width:1050px) {
+    .header__logo{
+        width: 95px;
+        height: 95px;
+    }
+    
+    #header__nombre{
+        font-size: 3rem;
+    }
+    
 }

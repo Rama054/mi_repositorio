@@ -1,16 +1,13 @@
 /*TELEFONO*/
 @media screen and (min-width: 320px) {
   #paralax {
-    background-image: url("../assets/img/agricultura-urbana.jpeg");
+    background-image: url("../assets/img/papapa.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     border-bottom: 5px solid black;
     height: 650px;
-  }
-  #paralax #paralax__texto {
-    background-color: rgba(255, 255, 255, 0.5);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -24,6 +21,12 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  #paralax #paralax__texto {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 50%;
+    background-color: #dec27ccc;
     margin: 0px auto;
   }
   #paralax #paralax__texto #paralax__title {
@@ -31,9 +34,7 @@
     font-size: 2.5rem;
   }
   #paralax #paralax__texto #paralax__parrafo {
-    text-align: center;
     font-size: 2rem;
-    width: 250px;
   }
   #video_presentacion {
     display: none;
