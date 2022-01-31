@@ -1,15 +1,15 @@
 @import 'variables';
 
 @media screen and (min-width:360px) {
-
+    
     article{
         display: flex;
         flex-direction: column;
-        
     }
 
     .info_ubicacion{
         margin: 20px;
+        width: 100%;
     }
 
     iframe{
@@ -26,11 +26,17 @@
         margin: 0px auto;
         width: 80%;
         height: 300px;
-
+    }
+    .info_ubicacion{
+        width: 100%;
     }
 }
 
 @media screen and (min-width:920px) {
+
+    .info_ubicacion{
+        width: 20%;
+    }
 
     article{
         flex-direction: row;
@@ -47,6 +53,7 @@
 
 
 h4{
+    margin: 20px;
     font: {
         size: 50px;
         family: 'Limelight', cursive;

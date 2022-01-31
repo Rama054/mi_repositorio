@@ -4,6 +4,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     background-image: url("../assets/img/cultivos-form.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -11,6 +13,10 @@
         -ms-flex-align: center;
             align-items: center;
     height: 700px;
+  }
+  #formulario form {
+    min-width: 360px;
+    width: 70%;
   }
   .titulo {
     background-color: rgba(255, 255, 255, 0.5);
@@ -32,8 +38,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  /*992px porque es cuando aparece el menu de hamburguesa*/
+@media screen and (min-width: 1500px) {
   #grilla {
     display: -ms-grid;
     display: grid;

@@ -52,9 +52,11 @@
         height: 600px;
     }
     .texto{
+        background-color: rgba(109, 109, 109, 0.74);
         font-family: 'Vollkorn', serif;
-        font-size: 2rem;
+        font-size: 3rem;
     }
+
     p{
         font-family: 'Vollkorn', serif;
         font-size: 1.1rem;
@@ -68,9 +70,6 @@
         margin: 0px auto 100px auto;
         display: flex;
         flex-direction: column;
-        /* div:hover{
-            transform: scale(1.1);
-        } */
         div{
             animation-name: translacionCostados;
             animation-duration: 2s;
@@ -137,8 +136,6 @@
         }
     }    
 }
-
-
 
 @keyframes translacionDesdeArriba {
      0%{

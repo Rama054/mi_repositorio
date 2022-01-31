@@ -59,8 +59,9 @@
     height: 600px;
   }
   .texto {
+    background-color: rgba(109, 109, 109, 0.74);
     font-family: 'Vollkorn', serif;
-    font-size: 2rem;
+    font-size: 3rem;
   }
   p {
     font-family: 'Vollkorn', serif;
@@ -79,9 +80,6 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /* div:hover{
-            transform: scale(1.1);
-        } */
   }
   #beneficios div {
     -webkit-animation-name: translacionCostados;

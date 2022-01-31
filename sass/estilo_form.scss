@@ -5,11 +5,17 @@
     #formulario{
         justify-content: center;
         background-image: url("../assets/img/cultivos-form.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         align-items: center;
-        height: 700px;
-        
+        height: 700px;     
+        form{
+            min-width: 360px;
+            width: 70%;
+        }   
     }
+    
     .titulo{
         background-color: map-get($colores, blanco-claro-on);
         text-align: center;
@@ -32,7 +38,7 @@
 
 }
 
-@media screen and (min-width:992px){ /*992px porque es cuando aparece el menu de hamburguesa*/
+@media screen and (min-width:1500px){ 
     
     #grilla{
         display: grid;
@@ -52,6 +58,7 @@
             image: url(../assets/img/cultivos-form.jpg);
             size: contain;
             repeat:no-repeat;
+            
         }
     }
     

@@ -184,7 +184,7 @@
             justify-content: left;
   }
   #cultivo_indoor #cultivo_indoor_contenido #cultivo_indoor_titulo span {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   #cultivo_indoor #cultivo_indoor_contenido #cultivo_indoor_parrafo {
     text-align: left;
@@ -226,8 +226,8 @@
   }
 }
 
-#puntos_compra {
-  background-image: url(../assets/img/ciudad_calles.jpg);
+#galeria {
+  background-image: url(../assets/img/fotito.jpg);
   background-position: center;
 }
 
